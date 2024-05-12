@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <img class="circle" src="./assets/Pphoto.jpg" alt="Rushabh Pandya">
+        <i class="fa-solid fa-toggle-off" onclick="switchMode()"></i>
+            <h1 class="A Details">Rushabh Pandya</h1>
+    <h2 class="A Details">Roll.no: 230732</h2>
+
+    <p class="Info">Hii! So I want to join the E-Cell as a Secy in the Web-dev so that I could give my best to the cell
+         and contribute in the best way I can. Also I would like to see myself doing better in the field of entrepreneurship. I chose this way because since I like dealing with
+        programming stuff, I could get on entrepreneurship stuff through it. Who knows, in what way will it shape my future. But I am
+    certain about one thing, that my efforts will never be shallow.</p>
+    <p><a class="linkedin-link" href="https://www.linkedin.com/in/rushabh-pandya-0ba7222a5/">LinkedIn</a></p>
+    <div class="special">
+        <h2>THANK YOU!!</h2>
+        <h2>THANK YOU!!</h2>
+      </div>
+
+  <script>
+    function switchMode() {
+        var element = document.body;
+        var icon = document.querySelector('.fa-solid');
+        var texts=document.querySelectorAll('.A');
+        element.classList.toggle("switch-mode");
+
+        texts.forEach(function(text) {
+        if (element.classList.contains("switch-mode")) {
+            icon.classList.remove("fa-toggle-off");
+            icon.classList.add("fa-toggle-on");
+            text.classList.remove("Details");
+            text.classList.add("Details2");
+        } else {
+            icon.classList.remove("fa-toggle-on");
+            icon.classList.add("fa-toggle-off");
+            text.classList.remove("Details2");
+            text.classList.add("Details");
+        }
+    });
+    }
+</script>
+</body>
+</html>
